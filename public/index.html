@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<title>SandyqBilim</title>
+	<link rel="stylesheet" media="" href="base.css">
+	<meta http-equiv="Cache-control" content="No-Cache">
+	<meta property="og:description" content="Виртуалды білім беру платформасы" />
+	<meta property="og:image" content="/og-preview.png" />
+	<meta name="apple-mobile-web-app-title" content="Maxstudify" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<script type="text/javascript" src="JS/complagaetAuditor.js"></script>
+	<script type="text/javascript" src="JS/Bobatron.js"></script>
+	<script type="text/javascript" src="base.js"></script>
+</head>
+<body id="body" style="">
+<div id="loader_wrapper">
+	<div id="loader_window" class="bobatron">
+		<svg id="microlaba_big_logo"></svg>
+		<div class="flex flex_column flex_gap_10 flex_alignitems_center to_switch_scroll" id="welcome_wrapper">
+			<h1 style="text-justify: center; text-align: center; line-height: 45px">
+				<div style="display: inline-block; vertical-align: middle;" class="microlaba_logo"></div>
+				SandyqBilim-ге<br>қош келдіңіз!
+			</h1>
+			<br>
+			<h4 style="text-justify: center; text-align: center">
+				Лукоянов Павел мен Сағындық Мақсаттың<br>білім беру платформасы.
+			</h4>
+			<div class="tumgu"></div>
+			<br>
+			<button class="bobatron button_go" Bt-CM="0.7" id="button_go">
+				Келесі<div class="arrow_right_b"></div>
+			</button>
+		</div>
+		<div class="flex flex_column flex_gap_10 flex_alignitems_center to_switch_scroll" id="welcome_import_wrapper">
+			<div class="flex flex_alignitems_center flex_gap_10" style="width: 100%;">
+				<div class="icon_settings_saves bobatron" Bt-CM="0.5"></div>
+				<h3>Деректерді тасымалдау</h3>
+			</div>
+			<div class="flex flex_column" id="import_oldprofile_wrapper" style="gap: 5px; display: none;">
+				<h4>Бар профиль</h4>
+				<div class="flex flex_alignitems_center flex_gap_10 import_profile_button import_profile_button_2 bobatron" id="load_old_profile" style="justify-content: space-between;">
+					<div class="flex flex_alignitems_center flex_gap_10" >
+						<div id="avatar_old" class="ava_4 small_avatar"></div>
+						<h3 id="name_old">Пайдаланушы аты</h3>
+					</div>
+					<div class="arrow_right_b"></div>
+				</div>
+			</div>
+			<div class="flex flex_column" style="gap: 5px;">
+				<h4>Жүктелетін профиль</h4>
+				<div class="flex flex_alignitems_center flex_gap_10 import_profile_button bobatron" id="load_imported_profile" style="justify-content: space-between;">
+					<div class="flex flex_alignitems_center flex_gap_10" >
+						<div id="avatar_imported" class="ava_2 small_avatar"></div>
+						<h3 id="name_imported">Пайдаланушы аты</h3>
+					</div>
+					<div class="arrow_right_b"></div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex_column flex_gap_10 flex_alignitems_center to_switch_scroll" id="input_field_wrapper">
+			<div class="flex flex_column flex_gap_10 flex_alignitems_center" style="width: 300px">
+				<div id="big_avatar_reg" class="big_avatar"></div>
+				<h1 id="big_name_reg" style="color: #757575">Пайдаланушы аты</h1>
+			</div>
+			<div class="flex flex_column flex_gap_10 flex_alignitems_center">
+				<div class="flex flex_column" style="gap: 5px; width: 300px">
+					<h4>Аватар</h4>
+					<div class="flex flex_gap_10" id="pick_field">
+						<div class="ava_2 small_avatar small_avatar_p"></div>
+						<div class="ava_3 small_avatar small_avatar_p"></div>
+						<div class="ava_4 small_avatar small_avatar_p"></div>
+						<div class="ava_5 small_avatar small_avatar_p"></div>
+						<div class="ava_6 small_avatar small_avatar_p"></div>
+					</div>
+				</div>
+				<div class="flex flex_column" style="gap: 5px;">
+					<h4 id="input_name_label_reg">Пайдаланушы аты</h4>
+					<input id="name_reg" type="text" placeholder="Пайдаланушы аты" class="bobatron" Bt-CM="0.7" maxlength="20">
+				</div>
+				<button class="bobatron button_go" Bt-CM="0.7" id="button_reg">
+					Бастау!<div class="arrow_right_b"></div>
+				</button>
+			</div>
+		</div>
+		<div class="flex flex_column flex_gap_10 flex_alignitems_center to_switch_scroll" id="location_issues_wrapper">
+			<div class="flex flex_alignitems_center flex_gap_10" style="width: 100%;">
+				<div class="icon_warning bobatron" Bt-CM="0.5"></div>
+				<h3>Ескерту!</h3>
+			</div>
+			<div class="flex flex_column" style="gap: 5px; width: 300px">
+				<h4 style="width: 300px" id="location_issues_message"></h4>
+				<button class="bobatron button_go" Bt-CM="0.7" id="location_issues_goback" style="width: 100%;">
+					Артқа<div class="arrow_right_b"></div>
+				</button>
+			</div>
+			<div class="flex flex_column" style="gap: 5px; width: 300px">
+				<h4 style="width: 300px">
+					Бір уақытта бірнеше SandyqBilim беттерін ашу ұсынылмайды
+				</h4>
+				<button class="bobatron button_warning" Bt-CM="0.7" id="location_issues_ignore" style="width: 100%;">
+					Елемеу<div class="arrow_right_b"></div>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="modal_wrapper">
+	<div id="window_settings" class="bobatron">
+		<div class="flex flex_gap_10">
+			<div class="microlaba_logo"></div>
+			<h1></h1>
+		</div>
+	</div>
+</div>
+<header id="header">
+	<div class="header_white_plate bobatron">
+		<div class="flex flex_alignitems_center flex_gap_10 header_logobox" id="microlaba_header">
+			<div class="microlaba_logo"></div>
+			<h1></h1>
+		</div>
+		<div class="flex flex_alignitems_center flex_gap_10 header_buttonbox" id="buttons_header">
+			<div class="flex flex_alignitems_center flex_gap_10" id="buttons_header_profile" style="z-index: 2;">
+				<h3 id="header_username">Лақап аты</h3>
+				<div id="header_ava" class="ava_2 small_avatar"></div>
+			</div>
+			<!--button class="bobatron" Bt-CM="0.7">Старая версия</button-->
+			<div class="icon_settings" id="button_settings"></div>
+		</div>
+	</div>
+	<div class="header_white_plate_shadow"></div>
+</header>
+<div class="menu_container">
+
+	<article class="menu_entry bobatron" id="sabaq_1_entry">
+		<div class="flex flex_column">
+			<h4>Теория + тест</h4>
+			<h3>HTML негіздері: Веб-беттерді құру</h3>
+			<div class="flex flex_gap_10" style="margin-top: 20px">
+				<div class="grade bobatron" Bt-CM="0.7" id="sabaq_1_progress_grade">0</div>
+				<div class="progress bobatron" Bt-CM="0.7">
+					<p style="z-index: 1;" id="sabaq_1_progress_percent">0%</p>
+					<div class="progress_green" id="sabaq_1_progress_green"></div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex_justify_end" style="width: 100%;">
+			<button class="bobatron button_start" Bt-CM="0.7" id="sabaq_1_start">
+				Бастау!<div class="arrow_right"></div>
+			</button>
+		</div>
+	</article>
+
+	<article class="menu_entry bobatron" id="sabaq_2_entry">
+		<div class="flex flex_column">
+			<h4>Теория + тест</h4>
+			<h3>CSS негіздері</h3>
+			<div class="flex flex_gap_10" style="margin-top: 20px">
+				<div class="grade bobatron" Bt-CM="0.7" id="sabaq_2_progress_grade">0</div>
+				<div class="progress bobatron" Bt-CM="0.7">
+					<p style="z-index: 1;" id="sabaq_2_progress_percent">0%</p>
+					<div class="progress_green" id="sabaq_2_progress_green"></div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex_justify_end" style="width: 100%;">
+			<button class="bobatron button_start" Bt-CM="0.7" id="sabaq_2_start">
+				Бастау!<div class="arrow_right"></div>
+			</button>
+		</div>
+	</article>
+
+	<article class="menu_entry bobatron" id="sabaq_3_entry">
+		<div class="flex flex_column">
+			<h4>Теория + тест</h4>
+			<h3>JavaScript тіліне кіріспе</h3>
+			<div class="flex flex_gap_10" style="margin-top: 20px">
+				<div class="grade bobatron" Bt-CM="0.7" id="sabaq_3_progress_grade">0</div>
+				<div class="progress bobatron" Bt-CM="0.7">
+					<p style="z-index: 1;" id="sabaq_3_progress_percent">0%</p>
+					<div class="progress_green" id="sabaq_3_progress_green"></div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex_justify_end" style="width: 100%;">
+			<button class="bobatron button_start" Bt-CM="0.7" id="sabaq_3_start">
+				Бастау!<div class="arrow_right"></div>
+			</button>
+		</div>
+	</article>
+
+	<article class="menu_entry bobatron" id="sabaq_4_entry">
+		<div class="flex flex_column">
+			<h4>Теория + тест</h4>
+			<h3>Веб-фреймворктар</h3>
+			<div class="flex flex_gap_10" style="margin-top: 20px">
+				<div class="grade bobatron" Bt-CM="0.7" id="sabaq_4_progress_grade">0</div>
+				<div class="progress bobatron" Bt-CM="0.7">
+					<p style="z-index: 1;" id="sabaq_4_progress_percent">0%</p>
+					<div class="progress_green" id="sabaq_4_progress_green"></div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex_justify_end" style="width: 100%;">
+			<button class="bobatron button_start" Bt-CM="0.7" id="sabaq_4_start">
+				Бастау!<div class="arrow_right"></div>
+			</button>
+		</div>
+	</article>
+
+	<article class="menu_entry bobatron" id="sabaq_5_entry">
+		<div class="flex flex_column">
+			<h4>Теория + тест</h4>
+			<h3>API және APIмен жұмыс жасау</h3>
+			<div class="flex flex_gap_10" style="margin-top: 20px">
+				<div class="grade bobatron" Bt-CM="0.7" id="sabaq_5_progress_grade">0</div>
+				<div class="progress bobatron" Bt-CM="0.7">
+					<p style="z-index: 1;" id="sabaq_5_progress_percent">0%</p>
+					<div class="progress_green" id="sabaq_5_progress_green"></div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex_justify_end" style="width: 100%;">
+			<button class="bobatron button_start" Bt-CM="0.7" id="sabaq_5_start">
+				Бастау!<div class="arrow_right"></div>
+			</button>
+		</div>
+	</article>
+
+</div>
+<div class="menu_container" style="display: none">
+	<article class="menu_entry bobatron flex_gap_10" id="" style="padding: 15px">
+		<div class="flex flex_alignitems_center flex_gap_10" style="width: 100%;">
+			<div class="icon_settings_profile bobatron" Bt-CM="0.5"></div>
+			<h3>Профиль</h3>
+		</div>
+		<div class="flex flex_alignitems_center flex_column flex_gap_10" style="justify-content: center; align-items: center; height: 100%">
+			<div id="big_avatar_edit" class="big_avatar"></div>
+			<h1 id="big_name_edit" style="">Пайдаланушы аты</h1>
+			<div class="flex flex_column" style="gap: 5px; width: 300px">
+				<h4>Аватар</h4>
+				<div class="flex flex_gap_10" id="pick_field">
+					<div class="ava_2 small_avatar small_avatar_p"></div>
+					<div class="ava_3 small_avatar small_avatar_p"></div>
+					<div class="ava_4 small_avatar small_avatar_p"></div>
+					<div class="ava_5 small_avatar small_avatar_p"></div>
+					<div class="ava_6 small_avatar small_avatar_p"></div>
+				</div>
+			</div>
+			<div class="flex flex_column" style="gap: 5px;">
+				<h4 id="input_name_label_edit">Пайдаланушы аты</h4>
+				<input id="name_edit" type="text" placeholder="Пайдаланушы аты" class="bobatron" Bt-CM="0.7" maxlength="20">
+			</div>
+		</div>
+	</article>
+	<article class="menu_entry bobatron" id="" style="padding: 15px">
+		<div class="flex flex_alignitems_center flex_gap_10" style="width: 100%;">
+			<div class="icon_settings_saves bobatron" Bt-CM="0.5"></div>
+			<h3>Деректер</h3>
+		</div>
+		<div class="flex flex_alignitems_center flex_column" style="gap: 50px; justify-content: center; align-items: center; height: 100%">
+			<div class="flex flex_column" style="gap: 5px;">
+				<h4 id="input_name_label_edit">Деректерді тасымалдау</h4>
+				<div class="flex flex_gap_10" style="max-width: 300px;">
+					<input id="export_data_link" style="width: 100%" readonly type="text" placeholder="..." class="bobatron" Bt-CM="0.7" maxlength="20">
+					<div class="flex flex_justify_center">
+						<button class="bobatron" Bt-CM="0.7" id="export_data_link_buttoncopy" style="z-index: 2;"></button>
+						<div class="icon_ok" style="position: absolute; margin: 0; transition-duration: 0.2s;" id="export_data_link_buttoncopy_ok"></div>
+					</div>
+				</div>
+				<h4 id="input_name_label_edit" style="max-width: 300px;">
+					Прогрессіңізді тасымалдау үшін, сілтемені басқа құрылғыда ашыңыз.
+				</h4>
+			</div>
+			<div class="flex flex_column" style="gap: 5px;">
+				<h4 id="input_name_label_edit">Деректерді қалпына келтіру</h4>
+				<button class="bobatron" Bt-CM="0.7" id="button_edit_sbros">Қалпына келтіру!</button>
+			</div>
+		</div>
+	</article>
+</div>
+<footer id="footer">
+	<div class="footer_content_container bobatron">
+		<div class="flex flex_alignitems_center flex_justify_center">
+			<button class="button_footer" id="button_settings_back">
+				<div class="arrow_left_b"></div>
+				<h4 style="color: #000000">Артқа</h4>
+			</button>
+			<button class="button_footer" id="button_settings_save">
+				<div class="flex flex_column flex_alignitems_center flex_justify_center" id="button_settings_save_content" style="gap: 5px; transition-duration: 0.3s">
+					<div class="arrow_save"></div>
+					<h4 style="color: #000000">Сақтау</h4>
+					<div class="flex flex_column flex_alignitems_center flex_justify_center" id="button_settings_save_content_state2" style="gap: 5px; position: absolute; top: -80px; display: none">
+						<div class="icon_ok"></div>
+						<h4 style="color: #000000">Сақталды!</h4>
+					</div>
+				</div>
+			</button>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
