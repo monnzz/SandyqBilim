@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="../../favicon.png">
+		<title>SandyqBilim</title>
+		<link rel="stylesheet" media="" href="base.css">
+		<meta http-equiv="Cache-control" content="No-Cache">
+		<meta property="og:description" content="Виртуальная образовательная платформа" />
+		<meta property="og:image" content="/og-preview.png" />
+		<meta name="apple-mobile-web-app-title" content="Maxstudify" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<script type="text/javascript" src="../../JS/complagaetAuditor.js"></script>
+		<script type="text/javascript" src="../lessonCfg.js"></script>
+		<script type="text/javascript" src="../../JS/Bobatron.js"></script>
+		<script type="text/javascript" src="../../JS/lessonTheory.js"></script>
+
+		<style>
+			table, td {
+				border: 1px solid #dfdfdf;
+			}
+		</style>
+	</head>
+	<body id="body" style="">
+		<div id="loader_wrapper">
+			<div id="loader_window" class="bobatron">
+				<svg id="microlaba_big_logo"></svg>
+				<div class="flex flex_column flex_gap_10 flex_alignitems_center to_switch_scroll" id="location_issues_wrapper">location_issues_wrapper</div>
+				<div class="flex flex_column flex_gap_10 flex_alignitems_center to_switch_scroll" id="lesson_complete_wrapper">lesson_complete_wrapper</div>
+			</div>
+		</div>
+		<div id="modal_wrapper">
+			<div id="window_settings" class="bobatron">
+				<div class="flex flex_gap_10">
+					<div class="microlaba_logo"></div>
+					<h1></h1>
+				</div>
+			</div>
+		</div>
+		<header id="header">
+			<div class="header_white_plate bobatron">
+				<div class="flex flex_alignitems_center flex_gap_10 header_logobox" id="microlaba_header">
+					<div class="icon_burger" id="burger"></div>
+					<div class="flex flex_alignitems_center flex_gap_10" id="microlaba_header_icon" style="cursor: pointer;">
+						<div class="microlaba_logo"></div>
+						<h1></h1>
+					</div>
+				</div>
+				<div class="flex flex_alignitems_center flex_gap_10 header_buttonbox" id="buttons_header">
+					<div class="flex flex_alignitems_center flex_gap_10" id="buttons_header_profile" style="z-index: 2;">
+						<h3 id="header_username">Username</h3>
+						<div id="header_ava" class="ava_2 small_avatar"></div>
+					</div>
+					<!--button class="bobatron" Bt-CM="0.7">Старая версия</button>
+					<div class="icon_settings" id="button_settings"></div-->
+				</div>
+			</div>
+			<div class="header_white_plate_shadow"></div>
+		</header>
+		<div class="menu_container">
+			<article class="side_menu bobatron" id="side_menu" style="">
+				<div style="display: flex; gap: 20px; flex-direction: column;">
+					<article class="menu_entry bobatron flex_gap_10">
+						<h3 id="main_header"></h3>
+						<div class="progress bobatron" Bt-CM="0.7">
+							<span style="z-index: 1;" id="main_progress_percent">0%</span>
+							<div class="progress_green" id="main_progress_green"></div>
+						</div>
+					</article>
+					<article class="menu_entry bobatron" id="lesson_stats" style="padding: 15px;"> </article>
+				</div>
+				<button id="button_goback" class="bobatron" Bt-CM="0.7"><div class="arrow_left_b"></div>Main page</button>
+			</article>
+			<article class="flex_alignitems_center bobatron" id="main_screen">
+				<article class="menu_entry_mini">
+					<div id="theory_content" style="font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; padding: 20px; border-radius: 8px;">
+						<h2 style="font-size: 24px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">HTML деген не?</h2>
+						<p style="font-size: 18px; color: #555;">HTML (HyperText Markup Language) – бұл веб-беттерді жасау үшін қолданылатын белгілеу тілі. Ол құжаттың құрылымын анықтайтын арнайы тэгтерден тұрады. Браузерлер HTML кодын оқып, оны қолданушыға графикалық түрде көрсетеді.</p>
+
+						<h2 style="font-size: 24px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">HTML құжатының негізгі құрылымы</h2>
+						<p style="font-size: 18px; color: #555;">Кез келген HTML құжаты төмендегі негізгі элементтерден тұрады:</p>
+						<pre style="background-color: #ecf0f1; border: 1px solid #bdc3c7; padding: 10px; border-radius: 4px;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Бет атауы&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Бұл негізгі тақырып&lt;/h1&gt;
+		&lt;p&gt;Бұл қарапайым параграф.&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+						<p style="font-size: 18px; color: #555;"><code>&lt;!DOCTYPE html&gt;</code> - құжаттың HTML5 нұсқасын қолданатынын көрсетеді.</p>
+						<p style="font-size: 18px; color: #555;"><code>&lt;html&gt;</code> - құжаттың негізгі контейнері.</p>
+						<p style="font-size: 18px; color: #555;"><code>&lt;head&gt;</code> - метаақпараттар мен бет атауын қамтиды.</p>
+						<p style="font-size: 18px; color: #555;"><code>&lt;body&gt;</code> - браузерде көрсетілетін негізгі мазмұнды қамтиды.</p>
+
+						<h2 style="font-size: 24px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">HTML тэгтері және олардың атрибуттары</h2>
+						<p style="font-size: 18px; color: #555;">HTML тэгтері – бұл элементтерді анықтайтын арнайы белгілер. Тэгтер жұппен (ашу және жабу) немесе жалғыз болуы мүмкін. Мысалы:</p>
+						<ul style="font-size: 18px; color: #555; list-style-type: disc; padding-left: 20px;">
+							<li><code>&lt;p&gt;</code> - параграф жасау үшін қолданылады.</li>
+							<li><code>&lt;a href="https://example.com"&gt;</code> - сілтеме жасау үшін қолданылады.</li>
+							<li><code>&lt;img src="image.jpg" alt="Сурет"&gt;</code> - сурет қою үшін қолданылады.</li>
+						</ul>
+						<p style="font-size: 18px; color: #555;">Тэгтерде қосымша ақпарат беретін атрибуттар болуы мүмкін. Мысалы:</p>
+						<pre style="background-color: #ecf0f1; border: 1px solid #bdc3c7; padding: 10px; border-radius: 4px;">&lt;a href="https://example.com" target="_blank"&gt;Сайтқа өту&lt;/a&gt;
+    </pre>
+						<p style="font-size: 18px; color: #555;">Бұл код сілтемені жаңа қойыншада ашуға мүмкіндік береді.</p>
+
+						<h2 style="font-size: 24px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">HTML-дегі негізгі элементтер</h2>
+						<p style="font-size: 18px; color: #555;">Веб-бет құру үшін келесі негізгі элементтер жиі қолданылады:</p>
+						<ul style="font-size: 18px; color: #555; list-style-type: disc; padding-left: 20px;">
+							<li><code>&lt;h1&gt; - &lt;h6&gt;</code> - тақырыптар.</li>
+							<li><code>&lt;p&gt;</code> - абзацтар.</li>
+							<li><code>&lt;ul&gt; &lt;li&gt;</code> - тізімдер.</li>
+							<li><code>&lt;table&gt;</code> - кестелер.</li>
+							<li><code>&lt;form&gt;</code> - пайдаланушыдан ақпарат алу үшін формалар.</li>
+						</ul>
+
+						<h2 style="font-size: 24px; color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px;">Қорытынды</h2>
+						<p style="font-size: 18px; color: #555;">HTML – веб-әзірлеудің негізгі тілі. Ол веб-беттердің құрылымын анықтайды және браузердің ақпаратты қалай көрсету керектігін белгілейді. HTML-ді жақсы меңгеру веб-әзірлеу әлеміне алғашқы қадам болып табылады.</p>
+					</div>
+
+
+					<div class="flex flex_column flex_alignitems_center flex_gap_10" style="width: 100%; max-width: 700px; margin: 100px 0 100px 0">
+						<button class="button_lesson_complete" id="buttonLessonComplete"><div class="arrow_right_b"></div></button>
+						<h1>Finish!</h1>
+					</div>
+				</article>
+			</article>
+		</div>
+	</body>
+</html>
